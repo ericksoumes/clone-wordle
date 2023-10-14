@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Libre+Franklin:wght@700&display=swap');
+h1, header, main{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+header{
+    padding: 10px;
+    text-align: center;
+}
+.menu-btn{
+    display: inline-block;
+    float: left;
+}
+.links-btn{
+    display: inline-block;
+    float: right;
+}
+.menu-btn img{
+    width: 35px;
+    margin-right: 35px;
+}
+.links-btn img{
+    width: 35px;
+    display: inline-block;
+}
+.game-title h1{
+    font-family: 'Crete Round', serif;
+}
+.game-title{
+    display: inline-block;
+}
+.words-board-row{
+    text-align: center;
+    margin: 5px;
+}
+.words-board-row-square{
+    width: 50px;
+    height: 50px;
+    border: 2.5px solid #c4c4c4;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+.words-board-row-square p{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+.words-board{
+    margin-top: 7px;
+}
+.color-wrong{
+    background-color: #787c7e;
+    border: 2.5px solid #787c7e;
+}
+.color-right{
+    background-color: #6aaa64;
+    border: 2.5px solid #6aaa64;
+}
+.color-right-letter-wrong-place{
+    background-color: #c9b458;
+    border: 2.5px solid #c9b458;
+}
