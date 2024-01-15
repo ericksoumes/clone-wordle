@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Wordle</title>
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/keyboad.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <img src="/images/menu-aberto.png" alt="" />
+      </div>
+      <div class="game-title">
+        <h1>Wordle</h1>
+      </div>
+      <div class="links-btn">
+        <img src="/images/questao.png" alt="" />
+        <img src="/images/config.png" alt="" />
+      </div>
+    </header>
+    <hr class="line" />
+    <main class="words-board">
+      <div class="words-board-row">
+        <div class="words-board-row-square color-wrong"><p>W</p></div>
+        <div class="words-board-row-square color-wrong"><p>O</p></div>
+        <div class="words-board-row-square color-wrong"><p>R</p></div>
+        <div class="words-board-row-square color-wrong"><p>L</p></div>
+        <div class="words-board-row-square color-wrong"><p>D</p></div>
+      </div>
+      <div class="words-board-row">
+        <div class="words-board-row-square color-wrong"><p>B</p></div>
+        <div class="words-board-row-square color-wrong"><p>R</p></div>
+        <div class="words-board-row-square color-wrong"><p>O</p></div>
+        <div class="words-board-row-square color-wrong"><p>W</p></div>
+        <div class="words-board-row-square color-right-letter-wrong-place">
+          <p>N</p>
+        </div>
+      </div>
+      <div class="words-board-row">
+        <div class="words-board-row-square color-wrong"><p>H</p></div>
+        <div class="words-board-row-square color-wrong"><p>I</p></div>
+        <div class="words-board-row-square color-right-letter-wrong-place">
+          <p>G</p>
+        </div>
+        <div class="words-board-row-square color-wrong"><p>H</p></div>
+        <div class="words-board-row-square color-right"><p>T</p></div>
+      </div>
+      <div class="words-board-row">
+        <div class="words-board-row-square color-right-letter-wrong-place">
+          <p>G</p>
+        </div>
+        <div class="words-board-row-square color-right-letter-wrong-place">
+          <p>A</p>
+        </div>
+        <div class="words-board-row-square color-wrong"><p>V</p></div>
+        <div class="words-board-row-square color-wrong"><p>O</p></div>
+        <div class="words-board-row-square color-right"><p>T</p></div>
+      </div>
+      <div class="words-board-row">
+        <div class="words-board-row-square color-right"><p>A</p></div>
+        <div class="words-board-row-square color-right"><p>G</p></div>
+        <div class="words-board-row-square color-right"><p>E</p></div>
+        <div class="words-board-row-square color-right"><p>N</p></div>
+        <div class="words-board-row-square color-right"><p>T</p></div>
+      </div>
+      <div class="words-board-row">
+        <div class="words-board-row-square words-board-typing"><p>B</p></div>
+        <div class="words-board-row-square words-board-typing"><p>O</p></div>
+        <div class="words-board-row-square words-board-typing"><p>R</p></div>
+        <div class="words-board-row-square words-board-typing"><p>D</p></div>
+        <div class="words-board-row-square words-board-typing"><p>A</p></div>
+      </div>
+      <div class="keyboard">
+        <div class="keyboard-row">
+          <button class="key">q</button>
+          <button class="key">w</button>
+          <button class="key">e</button>
+          <button class="key">r</button>
+          <button class="key">t</button>
+          <button class="key">y</button>
+          <button class="key">u</button>
+          <button class="key">i</button>
+          <button class="key">o</button>
+          <button class="key last-key">p</button>
+        </div>
+        <div class="keyboard-row">
+          <div class="spacer"></div>
+          <button class="key">a</button>
+          <button class="key">s</button>
+          <button class="key">d</button>
+          <button class="key">f</button>
+          <button class="key">g</button>
+          <button class="key">h</button>
+          <button class="key">j</button>
+          <button class="key">k</button>
+          <button class="key last-key">l</button>
+          <div class="spacer"></div>
+        </div>
+        <div class="keyboard-row">
+          <button class="key spacial-key">enter</button>
+          <button class="key">z</button>
+          <button class="key">x</button>
+          <button class="key">c</button>
+          <button class="key">v</button>
+          <button class="key">b</button>
+          <button class="key">n</button>
+          <button class="key">m</button>
+          <button class="key last-key spacial-key">
+            <i class="fa-solid fa-xl fa-delete-left"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/0e8d7eb619.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
