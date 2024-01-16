@@ -34,7 +34,7 @@ header {
 }
 .words-board-row {
   text-align: center;
-  margin: 5px;
+  margin-top: 5px;
 }
 .words-board-row-square {
   width: 50px;
