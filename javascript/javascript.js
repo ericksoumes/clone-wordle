@@ -54,17 +54,32 @@ document.body.addEventListener("keyup", (ev) => {
       alert("not enough letters");
     } else if (ev.key == "Enter" && i == 5) {
       for (let i = 0; i <= 4; i++) {
-        if (rowSixWord[i] == rightWord[i]) {
-          rowSix.children[i].classList.remove("words-board-typing");
-          rowSix.children[i].classList.add("color-right");
-        } else if (rightWord.includes(rowSixWord[i])) {
+        if (rightWord.includes(rowSixWord[i])) {
+          if (rowSixWord.at(i) == rightWord.at(i)) {
+            rowSix.children[i].classList.remove("words-board-typing");
+            rowSix.children[i].classList.add("color-right");
+            console.log(`exclui o ${rightWord[i]}`);
+            rightWord[i] = "right";
+            console.log(rightWord);
+          }
+        }
+      }
+      for (let i = 0; i <= 4; i++) {
+        if (rightWord.includes(rowSixWord[i]) && rightWord.at(i) != "right") {
+          console.log(`${i} passou`);
           rowSix.children[i].classList.remove("words-board-typing");
           rowSix.children[i].classList.add("color-right-letter-wrong-place");
+          console.log(
+            `pintei o ${rightWord[rightWord.indexOf(rowSixWord.at(i))]}`
+          );
+          rightWord[rightWord.indexOf(rowSixWord.at(i))] = "wrong-place";
+          console.log(rightWord);
         } else {
           rowSix.children[i].classList.remove("words-board-typing");
           rowSix.children[i].classList.add("color-wrong");
         }
       }
+      rightWord = ["d", "a", "d", "o", "s"];
       rowSixWord.push("lock");
       i = 0;
     } else if (i <= 4 && alowedKeys.includes(`${ev.key}`)) {
@@ -83,17 +98,32 @@ document.body.addEventListener("keyup", (ev) => {
       alert("not enough letters");
     } else if (ev.key == "Enter" && i == 5) {
       for (let i = 0; i <= 4; i++) {
-        if (rowFiveWord[i] == rightWord[i]) {
-          rowFive.children[i].classList.remove("words-board-typing");
-          rowFive.children[i].classList.add("color-right");
-        } else if (rightWord.includes(rowFiveWord[i])) {
+        if (rightWord.includes(rowFiveWord[i])) {
+          if (rowFiveWord.at(i) == rightWord.at(i)) {
+            rowFive.children[i].classList.remove("words-board-typing");
+            rowFive.children[i].classList.add("color-right");
+            console.log(`exclui o ${rightWord[i]}`);
+            rightWord[i] = "right";
+            console.log(rightWord);
+          }
+        }
+      }
+      for (let i = 0; i <= 4; i++) {
+        if (rightWord.includes(rowFiveWord[i]) && rightWord.at(i) != "right") {
+          console.log(`${i} passou`);
           rowFive.children[i].classList.remove("words-board-typing");
           rowFive.children[i].classList.add("color-right-letter-wrong-place");
+          console.log(
+            `pintei o ${rightWord[rightWord.indexOf(rowFiveWord.at(i))]}`
+          );
+          rightWord[rightWord.indexOf(rowFiveWord.at(i))] = "wrong-place";
+          console.log(rightWord);
         } else {
           rowFive.children[i].classList.remove("words-board-typing");
           rowFive.children[i].classList.add("color-wrong");
         }
       }
+      rightWord = ["d", "a", "d", "o", "s"];
       rowFiveWord.push("lock");
       i = 0;
     } else if (i <= 4 && alowedKeys.includes(`${ev.key}`)) {
@@ -112,17 +142,32 @@ document.body.addEventListener("keyup", (ev) => {
       alert("not enough letters");
     } else if (ev.key == "Enter" && i == 5) {
       for (let i = 0; i <= 4; i++) {
-        if (rowFourWord[i] == rightWord[i]) {
-          rowFour.children[i].classList.remove("words-board-typing");
-          rowFour.children[i].classList.add("color-right");
-        } else if (rightWord.includes(rowFourWord[i])) {
+        if (rightWord.includes(rowFourWord[i])) {
+          if (rowFourWord.at(i) == rightWord.at(i)) {
+            rowFour.children[i].classList.remove("words-board-typing");
+            rowFour.children[i].classList.add("color-right");
+            console.log(`exclui o ${rightWord[i]}`);
+            rightWord[i] = "right";
+            console.log(rightWord);
+          }
+        }
+      }
+      for (let i = 0; i <= 4; i++) {
+        if (rightWord.includes(rowFourWord[i]) && rightWord.at(i) != "right") {
+          console.log(`${i} passou`);
           rowFour.children[i].classList.remove("words-board-typing");
           rowFour.children[i].classList.add("color-right-letter-wrong-place");
+          console.log(
+            `pintei o ${rightWord[rightWord.indexOf(rowFourWord.at(i))]}`
+          );
+          rightWord[rightWord.indexOf(rowFourWord.at(i))] = "wrong-place";
+          console.log(rightWord);
         } else {
           rowFour.children[i].classList.remove("words-board-typing");
           rowFour.children[i].classList.add("color-wrong");
         }
       }
+      rightWord = ["d", "a", "d", "o", "s"];
       rowFourWord.push("lock");
       i = 0;
     } else if (i <= 4 && alowedKeys.includes(`${ev.key}`)) {
@@ -141,19 +186,33 @@ document.body.addEventListener("keyup", (ev) => {
       alert("not enough letters");
     } else if (ev.key == "Enter" && i == 5) {
       for (let i = 0; i <= 4; i++) {
-        if (rowThreeWord[i] == rightWord[i]) {
-          rowThree.children[i].classList.remove("words-board-typing");
-          rowThree.children[i].classList.add("color-right");
-        } else if (rightWord.includes(rowThreeWord[i])) {
+        if (rightWord.includes(rowThreeWord[i])) {
+          if (rowThreeWord.at(i) == rightWord.at(i)) {
+            rowThree.children[i].classList.remove("words-board-typing");
+            rowThree.children[i].classList.add("color-right");
+            console.log(`exclui o ${rightWord[i]}`);
+            rightWord[i] = "right";
+            console.log(rightWord);
+          }
+        }
+      }
+      for (let i = 0; i <= 4; i++) {
+        if (rightWord.includes(rowThreeWord[i]) && rightWord.at(i) != "right") {
+          console.log(`${i} passou`);
           rowThree.children[i].classList.remove("words-board-typing");
           rowThree.children[i].classList.add("color-right-letter-wrong-place");
+          console.log(
+            `pintei o ${rightWord[rightWord.indexOf(rowThreeWord.at(i))]}`
+          );
+          rightWord[rightWord.indexOf(rowThreeWord.at(i))] = "wrong-place";
+          console.log(rightWord);
         } else {
           rowThree.children[i].classList.remove("words-board-typing");
           rowThree.children[i].classList.add("color-wrong");
         }
       }
+      rightWord = ["d", "a", "d", "o", "s"];
       rowThreeWord.push("lock");
-
       i = 0;
     } else if (i <= 4 && alowedKeys.includes(`${ev.key}`)) {
       rowThree.children[i].innerHTML = `<p>${ev.key}</p>`;
